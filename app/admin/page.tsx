@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import AdminDashboard from "@/components/admin/admin-dashboard"
+import { Suspense } from "react"
 
 export const metadata: Metadata = {
   title: "Admin Dashboard",
@@ -7,6 +8,8 @@ export const metadata: Metadata = {
 }
 
 export default function AdminPage() {
-  return <AdminDashboard />
+  return <Suspense>
+    <AdminDashboard />
+  </Suspense>
 }
 
