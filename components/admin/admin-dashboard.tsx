@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { useSearchParams } from "next/navigation"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { ActivityMonitor } from "@/components/admin/activity-monitor"
@@ -11,6 +10,7 @@ import { RewardsManagement } from "@/components/admin/rewards-management"
 import { GroupsManagement } from "@/components/admin/groups-management"
 import { StatisticsPanel } from "@/components/admin/statistics-panel"
 import { AdminHeader } from "@/components/admin/admin-header"
+import { useSearchParams } from "next/navigation"
 
 export default function AdminDashboard() {
   const searchParams = useSearchParams()
