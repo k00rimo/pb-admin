@@ -110,7 +110,7 @@ const mockRejectedSubmissions: ChallengeSubmission[] = [
     userId: "usr-5",
     userName: "Tomáš Vysoký",
     challengeId: "chl-1",
-    submittedAt: new Date(2023, 5, 16, 18, 05),
+    submittedAt: new Date(2023, 5, 16, 18, 5),
     status: "rejected",
     photoUrls: ["/placeholder.svg?height=400&width=600", "/placeholder.svg?height=400&width=600"],
     notes: "Upratoval som okolie basketbalového ihriska.",
